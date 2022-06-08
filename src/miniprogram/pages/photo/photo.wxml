@@ -1,0 +1,10 @@
+<!--pages/photo/photo.wxml-->
+<view id="app">
+  <view style="color: white;">{{src}}</view>
+  <camera class="camera" frame-size="large" mode="normal"></camera>
+  <view class="btn-wrapper">
+    <button class="btn" type="primary" bindtap="takePhoto" >
+      <image id="img" src="../../images/photo.png" mode="widthFix"></image>
+    </button>
+  </view>
+</view>

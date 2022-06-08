@@ -1,0 +1,14 @@
+<view id="detial">
+  <view wx:for="{{renderList}}" id="wrapper">
+
+
+    <block wx:if="{{item[0]=='img'}}">
+      <image class="img" src="{{item[1]}}"></image>
+    </block>
+    
+    <block wx:else>
+      <view class="{{item[0]}}">{{item[1]}}</view>
+    </block>
+
+</view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/photo/photo.wxss */
+page{
+  height: 100%;
+  background-color: black;
+}
+.camera{
+  height: 81vh;
+}
+#app{
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-wrapper{
+  // border: 1px solid blue;
+  // position: absolute;
+  // bottom: 40rpx;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .btn{
+    // border: 1px solid red;
+    text-align: center;
+    margin-top: 30rpx;
+    border-radius: 50%;
+    height: 200rpx;
+    width: 200rpx;
+    background-color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #img{
+      margin: 10rpx;
+      //  border: 1px solid blue;
+      width: 128rpx;
+      height: 128rpx;
+      line-height: 128rpx;
+    }
+  }
+}

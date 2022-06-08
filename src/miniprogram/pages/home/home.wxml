@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+
+<view id="app">
+  <view class="image-wrapper">
+    <view class="image-border">
+      <block wx:if="{{src}}">
+        <image class="image" mode="aspectFill"  src="{{src}}"></image>
+      </block>
+      <block wx:else>
+        <image class="image" mode="aspectFill"  src="../../images/banner.jpg"></image>
+      </block>
+
+    </view>
+    <view class="detail">
+        <block wx:if="{{res['conf']!=null}}">
+          <text style="color: {{color}};">{{res['type']+','+res['conf']}}</text>
+        </block>
+        <block wx:else>
+          <text style="font-size: 40rpx;color: #eeeeee;font-weight: 600;">CNN POTATO LEAF MP</text>
+        </block>
+    
+      </view>
+  </view>
+
+  <view class="floating-button-wrapper">
+    <view class="floating-button">
+      <view class="btn" id="btnGallery" bindtap="chooseImage">
+        <image class="image" src="../../images/Gallery.png" mode="widthFix"/>
+      </view>
+      <view class="btn {{animate_class}}" id="btnOpen" bindtap="open" >
+        <image class="image" mode="widthFix" src="../../images/smile.png"></image>
+      </view>
+      <view class="btn" id="btnCamera" bindtap="takePhoto" >
+        <image class="image" src="../../images/camera.png" mode="widthFix"/>
+      </view>
+    </view>
+  </view>
+
+</view>

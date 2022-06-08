@@ -1,0 +1,89 @@
+$debug-mode:false;
+page{
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-wrapper{
+  // border: 1px solid red;
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  // background-color: red;
+  .image-border{
+    box-shadow: 5px 5px 5px 5px #b2b2b2;
+    border:30rpx solid #eeeeee;
+    border-radius: 40rpx;
+  }
+  .image{
+    max-width: 400rpx;
+    max-height: 400rpx;
+    // border: 35rpx solid #b2b2b2;
+    border-radius: 20rpx;
+  }
+}
+
+
+// 动画 
+
+.rotated{
+  transform: rotate(180deg);
+}
+
+
+.floating-button-wrapper{
+  display: flex;
+  justify-content: center;
+  .floating-button{
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 180rpx;
+    flex-direction: row;
+    @if $debug-mode {
+      border: 1px solid red;
+    }
+    .btn{
+      transition: 1s;
+      display: inline-block;
+      background-color: #2196f3;
+      // border: 1px dashed orange;
+      text-align: center;
+      line-height: 120rpx;
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .image{
+        // border: 1px solid red;
+        width: 64rpx;
+      }
+      &:nth-child(2){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s;
+        // background-color: red;
+        position: relative;
+        top: 120rpx;
+        position: relative;
+        z-index: 200;
+      }
+    }
+  }
+
+}
+
+.detail{
+  margin-top: 40rpx;
+  font-size: 60rpx;
+  color: #757575;
+}

@@ -1,0 +1,33 @@
+/* pages/about/about.wxss */
+
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  .h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 60rpx;
+    border-bottom: 2px solid red;
+    padding-left: 10rpx;
+    margin: 40rpx 0rpx;
+  }
+  .h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40rpx;
+    margin: 40rpx 0rpx;
+  }
+  .h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20rpx;
+    margin: 40rpx 0rpx;
+  }
+  .p{
+    text-indent: 2rem;
+    margin: 20rpx;
+    padding: 10rpx;
+  }
+}
+
